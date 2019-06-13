@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/rank/index",
+    "pages/record/index",
+    "pages/setting/index",
+    "pages/about/index",
+    "pages/components/loading/loading"
+  ],
+  "window": {
+    "navigationBarTitleText": "HlSudoku",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#ffc107",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#fff"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,28 @@
+<!--pages/record/index.wxml-->
+<view class='container' wx:if="{{countsAll}}">
+  <view class='hdBar newRecord'>
+    <text class='title'>排行榜</text>
+    <image src='/images/tip.png' bindtap='showTip' data-type="tip2"></image>
+    <text class='tip' wx:if="{{showTip2}}">显示当前游戏前100名的情况</text>
+  </view>
+  <view class='records records2'>
+    <view class='thead'>
+      <text>排名</text>
+      <text>用户</text>
+      <text>难度等级</text>
+      <text>用时</text>
+    </view>
+    <view class='tbody' wx:for="{{records}}" wx:key="rank">
+      <text>{{item.rank}}</text>
+      <view class='rank-user'>
+            <image class='flex-item rank-avatar' src='{{item.avatar_url}}'></image>
+            <text class='flex-item'>{{item.nickname}}</text>
+      </view>
+      <text>{{item.degree}}</text>
+      <text>{{item.score_time}}</text>
+    </view>
+  </view>
+</view>
+<view wx:else class='empty'>
+  <text>{{loadingTip}}</text>
+</view>
