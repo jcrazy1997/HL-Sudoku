@@ -69,8 +69,8 @@ Page({
     canIUse: true,
 
     avatarPosition: {
-      x: -25,
-      y: 25
+      x: 87,
+      y: 35
     },
     avatarTitle: {
       text: 'sudoLite',
@@ -85,6 +85,18 @@ Page({
     // showCanvasResult: false
     // end data
     showOption: false,
+  },
+  onShow: function(){
+    console.log("11111");
+  },
+  onReady: function () {
+    const www = wx.createSelectorQuery();
+    www.select("#jtq").boundinClientRect();
+    www.exec(function (res) {
+      console.log("222222");
+
+      console.log("2" + res);
+    })
   },
   degree: .3,
   percentDegree: '30%',
@@ -1040,6 +1052,7 @@ Page({
       showOptionAnimation: this.basicAnimation(300).scale(0).step().export()
     })
   },
+  
 
   tapRowToShowSame(e) {
     if(this.data.toolTip.type === 'pause'){
@@ -1050,8 +1063,8 @@ Page({
 
   moveAvatarEnd(e) {
     let position = {
-      x: -25,
-      y: 25
+      x: 87,
+      y: 35
     }
     this.setData({
       avatarPosition: position

@@ -327,7 +327,7 @@ page, .container {
 }
 
 .container .drawer .top {
-  height: 120px;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,7 +341,7 @@ page, .container {
 .container .drawer .top movable-area {
   width: 100%;
   height: 100%;
-  left: 50%;
+  
 }
 
 .container .drawer .top movable-view {

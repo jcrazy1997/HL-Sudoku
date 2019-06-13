@@ -7,7 +7,7 @@
 
   <view class='drawer' animation="{{drawer}}">
     <view class='top'>
-      <movable-area>
+      <movable-area id="jtq">
         <movable-view direction="all" x="{{avatarPosition.x}}" y="{{avatarPosition.y}}" out-of-bounds='true' damping='50' inertia='true' bindtouchend="moveAvatarEnd">
           <image src='/images/logo.png' catchtap='tapAvatar' catchlongpress="longTapAvatar"></image>
         </movable-view>
@@ -16,7 +16,9 @@
       
       <view style='height:25px;width:25px;'>
         <open-data type="userAvatarUrl"></open-data>
-        <open-data type="userNickName"></open-data>
+      </view>
+      <view style='height:25px'>
+          <open-data type="userNickName"></open-data>
       </view>
 
 

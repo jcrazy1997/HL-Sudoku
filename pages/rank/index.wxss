@@ -39,16 +39,16 @@
   text-align: center;
 }
 
-.records > view text:first-child {
+.records > view>text:first-child {
+  width: 12%;
+}
+.records > view>text:nth-child(2) {
+  width: 38%;
+}
+.records > view>text:nth-child(3) {
   width: 20%;
 }
-.records > view text:nth-child(2) {
-  width: 30%;
-}
-.records > view text:nth-child(3) {
-  width: 20%;
-}
-.records > view text:last-child {
+.records > view>text:last-child {
   width: calc(30% - 3px);
 }
 
@@ -58,12 +58,12 @@
   border-right: 1px dashed #eee;
 }
 
-.records view.tbody text {
-  border-right: 1px dashed #eee;
-}
-
 .records view.tbody text:last-child {
   border: none;
+}
+
+.records view.tbody text {
+  border-right: 1px dashed #eee;
 }
 
 .records .total {
@@ -81,7 +81,17 @@
   display: inline-flex;
   flex-direction: row;
   height: 30px;
-  width: 30%;
+  width: 38%;
+  border-right: 1px solid #eee;
+}
+
+.rank-user > text{
+  width: 80px;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
 }
 
 .rank-avatar{
@@ -92,3 +102,4 @@
   padding-right: 10px;
   text-align: center;
 }
+

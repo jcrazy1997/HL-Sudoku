@@ -16,7 +16,7 @@
       <text>{{item.rank}}</text>
       <view class='rank-user'>
             <image class='flex-item rank-avatar' src='{{item.avatar_url}}'></image>
-            <text class='flex-item'>{{item.nickname}}</text>
+            <text class='flex-item' >{{item.nickname}}</text>
       </view>
       <text>{{item.degree}}</text>
       <text>{{item.score_time}}</text>
